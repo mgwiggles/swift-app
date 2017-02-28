@@ -14,32 +14,22 @@ class ViewController: UIViewController {
 //    Closed circle shows that label is connected to something in the storyboard
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
 //    Need to put variables in specific parts of code
     
-    var tapCount = 0
-    
-    @IBAction func secondButtonTapped(_ sender: Any) {
-        
-        tapCount = tapCount + 1
-        
-        if tapCount >= 20 {
-            theLabel.text = "You tapped the button 10 times!"
-        }
-        
-        print(tapCount)
-        
-    }
+
     @IBAction func buttonTapped(_ sender: Any) {
         
-        theLabel.text = "Hello there!"
-//        You can leave messages for yourself in the code. Should only really be used when you're trying to debug
-        tapCount = tapCount + 1
+//        print(text1.text ?? "")
+//        print(text2.text ?? "")
+        print(text1.text!)
+        print(text2.text!)
         
-        if tapCount >= 10 {
-            theLabel.text = "You tapped the button 10 times!"
-        }
+        theLabel.text = "Answer is...\(Double(text1.text!)! + Double(text2.text!)!)"
         
-        print(tapCount)
         
     }
     override func viewDidLoad() {

@@ -299,6 +299,7 @@
 				C9C52BDF1E64F6A200369084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
