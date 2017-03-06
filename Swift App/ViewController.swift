@@ -28,7 +28,8 @@ class ViewController: UIViewController {
         print(text1.text!)
         print(text2.text!)
         
-        var addition = false
+        var addition = true
+        
         var subtraction = true
         
         if addition {
